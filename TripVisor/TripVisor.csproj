@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87525493-2054-4E0F-9BBC-656260B80680}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TripVisor</RootNamespace>
+    <AssemblyName>TripVisor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>kk-removebg-preview.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>C:\Program Files (x86)\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Program Files (x86)\SimpleLogin-Csharp-main\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHotel.Designer.cs">
+      <DependentUpon>AddHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDest.Designer.cs">
+      <DependentUpon>AddDest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNew.Designer.cs">
+      <DependentUpon>AddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPack.Designer.cs">
+      <DependentUpon>AddPack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel.Designer.cs">
+      <DependentUpon>Hotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelDetails.Designer.cs">
+      <DependentUpon>HotelDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackDetail.Designer.cs">
+      <DependentUpon>PackDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour.Designer.cs">
+      <DependentUpon>Tour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TripVisorDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TripVisorDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TripVisorDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TripVisorDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TripVisorInventory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TripVisorInventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ucHotel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHotel.Designer.cs">
+      <DependentUpon>ucHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPackage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPackage.Designer.cs">
+      <DependentUpon>ucPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddHotel.resx">
+      <DependentUpon>AddHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDest.resx">
+      <DependentUpon>AddDest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNew.resx">
+      <DependentUpon>AddNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPack.resx">
+      <DependentUpon>AddPack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel.resx">
+      <DependentUpon>Hotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelDetails.resx">
+      <DependentUpon>HotelDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackDetail.resx">
+      <DependentUpon>PackDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour.resx">
+      <DependentUpon>Tour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHotel.resx">
+      <DependentUpon>ucHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPackage.resx">
+      <DependentUpon>ucPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TripVisorDataSet.xsc">
+      <DependentUpon>TripVisorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TripVisorDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TripVisorDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TripVisorDataSet.xss">
+      <DependentUpon>TripVisorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TripVisorDataSet1.xsc">
+      <DependentUpon>TripVisorDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TripVisorDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TripVisorDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TripVisorDataSet1.xss">
+      <DependentUpon>TripVisorDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TripVisorInventory.xsc">
+      <DependentUpon>TripVisorInventory.xsd</DependentUpon>
+    </None>
+    <None Include="TripVisorInventory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TripVisorInventory.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TripVisorInventory.xss">
+      <DependentUpon>TripVisorInventory.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kk-removebg-preview.ico" />
+    <None Include="Picture\icon\destination %281%29.png" />
+    <None Include="Picture\icon\destination.png" />
+    <None Include="Picture\icon\5-stars.png" />
+    <None Include="Picture\icon\arrow.png" />
+    <None Include="Picture\icon\arrow-right.png" />
+    <None Include="Picture\icon\checklist %281%29.png" />
+    <None Include="Picture\icon\checklist.png" />
+    <None Include="Picture\icon\close.png" />
+    <None Include="Picture\icon\completed-task.png" />
+    <None Include="Picture\icon\box.png" />
+    <None Include="Picture\icon\delivery-service.png" />
+    <Content Include="Picture\icon\email.png" />
+    <Content Include="Picture\icon\hidden.png" />
+    <None Include="Picture\icon\hotel %281%29.png" />
+    <None Include="Picture\icon\hotel.png" />
+    <None Include="Picture\icon\hotell.png" />
+    <None Include="Picture\icon\hotel %282%29.png" />
+    <Content Include="Picture\icon\id-card.png" />
+    <None Include="Picture\icon\information.png" />
+    <Content Include="Picture\icon\key %281%29.png" />
+    <Content Include="Picture\icon\key.png" />
+    <Content Include="Picture\icon\kk-removebg-preview.ico" />
+    <None Include="Picture\icon\location.png" />
+    <None Include="Picture\icon\logout.png" />
+    <None Include="Picture\icon\menu.png" />
+    <None Include="Picture\icon\logoutbb.png" />
+    <Content Include="Picture\icon\phone-call.png" />
+    <None Include="Picture\icon\plane %281%29.png" />
+    <None Include="Picture\icon\plane.png" />
+    <None Include="Picture\icon\premium.png" />
+    <None Include="Picture\icon\premium-quality.png" />
+    <None Include="Picture\icon\profile-picture.png" />
+    <None Include="Picture\icon\profile-user.png" />
+    <None Include="Picture\icon\planebb.png" />
+    <Content Include="Picture\icon\profile.png" />
+    <None Include="Picture\icon\route.png" />
+    <None Include="Picture\icon\travel.png" />
+    <None Include="Picture\icon\right-arrow.png" />
+    <None Include="Picture\icon\shopping-bag.png" />
+    <None Include="Picture\icon\search.png" />
+    <Content Include="Picture\icon\user %281%29.png" />
+    <None Include="Picture\icon\user-info.png" />
+    <Content Include="Picture\icon\user.png" />
+    <None Include="Picture\image\asian-woman-wearing-chinese-traditional-dress-ban-rak-thai-village-mae-hong-son-province-thailand.jpg" />
+    <None Include="Picture\image\beach-1751455_1280.jpg" />
+    <None Include="Picture\image\beautiful-shot-building-near-forested-mountains.jpg" />
+    <None Include="Picture\image\breathtaking-scenery-amazing-landscape-view.jpg" />
+    <Content Include="Picture\image\elina-emurlaeva-6m6UyDRaM1w-unsplash.jpg" />
+    <Content Include="Picture\image\misurina-sunset.jpg" />
+    <Content Include="Picture\image\painting-mountain-lake-with-mountain-background %281%29.jpg" />
+    <Content Include="Picture\image\pic1.jpg" />
+    <Content Include="Picture\image\wet-monstera-plant-leaves-mobile-wallpaper.jpg" />
+    <Content Include="Picture\logo\kk-removebg-preview.png" />
+    <Content Include="Picture\logo\kk.png" />
+    <Content Include="Picture\logo\Logo-removebg-preview.png" />
+    <Content Include="Picture\logo\Logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
